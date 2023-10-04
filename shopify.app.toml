@@ -2,7 +2,7 @@
 
 name = "test"
 client_id = "be87cedb9a64fb58695bcee667823375"
-application_url = "https://example.com"
+application_url = "https://permissions-dave-merry-diamonds.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://example.com/api/auth",
-  "https://obtained-assembled-cuisine-quit.trycloudflare.com/auth/callback",
-  "https://obtained-assembled-cuisine-quit.trycloudflare.com/auth/shopify/callback",
-  "https://obtained-assembled-cuisine-quit.trycloudflare.com/api/auth/callback"
+  "https://permissions-dave-merry-diamonds.trycloudflare.com/auth/callback",
+  "https://permissions-dave-merry-diamonds.trycloudflare.com/auth/shopify/callback",
+  "https://permissions-dave-merry-diamonds.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
@@ -22,3 +21,7 @@ api_version = "2023-10"
 
 [pos]
 embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "adesso-dev-shop.myshopify.com"
